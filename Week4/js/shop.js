@@ -27,11 +27,11 @@ for (var i = 0; i < products.length; i++){
 // use to check hours value
 
 if (new Date().getHours() < 12) {
-	document.getElementById("time-greeting").innerHTML = "Good morning";
+	document.getElementById("time-greeting").innerHTML = "Good Morning";
 } else if (new Date().getHours() < 18) {
-	document.getElementById("time-greeting").innerHTML = "Good afternoon";
+	document.getElementById("time-greeting").innerHTML = "Good Afternoon";
 } else {
-	document.getElementById("time-greeting").innerHTML = "Good evening";
+	document.getElementById("time-greeting").innerHTML = "Good Evening";
 }
 
 var customerElement = document.getElementById("customer-name");
