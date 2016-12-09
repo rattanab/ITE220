@@ -92,9 +92,21 @@ var shop = {
 		this.totalPrice = this.calculateTotalPrice();
 		var totalPriceElement = document.getElementById("total-price");
 		totalPriceElement.textContent = this.totalPrice;
+	},
+	
+	timeDependentGreeting: function() {
+		var time = new Date().getHours();
+		if (time < 12) {
+			document.getElementById("time-greeting").innerHTML = "Good Morning";
+		} else if (time < 18) {
+			document.getElementById("time-greeting").innerHTML = "Good Afternoon";
+		} else {
+			document.getElementById("time-greeting").innerHTML = "Good Evening";
+		}
 	}
 };
 
 shop.displayCustomerName();
 shop.displayProductList();
 shop.displayTotalPrice();
+shop.timeDependentGreeting();
