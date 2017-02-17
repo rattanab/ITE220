@@ -1,0 +1,15 @@
+table.spec{
+	border-collapse:collapse;
+	width:100%;
+}
+table.spec th{
+	height:32px;
+	width: 200px;
+	border:1px solid #d4d4d4;
+	background-color: #d0d0d0;
+	padding:11px 5px 11px 5px;
+}
+table.spec td{
+	border:1px solid #d4d4d4;
+	padding:8px;
+}
